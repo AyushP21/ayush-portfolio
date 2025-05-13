@@ -25,7 +25,7 @@ const projects = [
     title: "Visitor System Dashboard",
     description:
       "Streamlined system to register, track, and manage visitors seamlessly.",
-    image: "/projects/project3.png",
+    image: import.meta.env.BASE_URL + "projects/project3.png",
     tags: ["Java", "Servlet", "SQL", "tomcat"],
     demoUrl: "#",
     githubUrl: "#",
