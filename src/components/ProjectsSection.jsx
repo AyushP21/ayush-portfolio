@@ -1,4 +1,5 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import Project3Img from "@/assets/projects/project3.png";
 
 const projects = [
   {
@@ -25,7 +26,7 @@ const projects = [
     title: "Visitor System Dashboard",
     description:
       "Streamlined system to register, track, and manage visitors seamlessly.",
-    image: import.meta.env.BASE_URL + "projects/project3.png",
+    image: Project3Img,
     tags: ["Java", "Servlet", "SQL", "tomcat"],
     demoUrl: "#",
     githubUrl: "#",
