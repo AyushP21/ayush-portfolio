@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "My Portfolio Website",
     description: "Showcasing my work through a modern UI powered by React and Tailwind.",
-    image: "/projects/project1.png",
+    image: "projects/project1.png",
     tags: ["React", "TailwindCSS", "Supabase"],
     demoUrl: "#",
     githubUrl: "#",
@@ -15,7 +15,7 @@ const projects = [
     title: "Login Page",
     description:
       "Modern, user-friendly login page with full authentication flow.",
-    image: "/projects/project2.png",
+    image: "projects/project2.png",
     tags: ["Java", "MySQL", "Javax"],
     demoUrl: "#",
     githubUrl: "#",
@@ -25,7 +25,7 @@ const projects = [
     title: "Visitor System Dashboard",
     description:
       "Streamlined system to register, track, and manage visitors seamlessly.",
-    image: "/projects/project3.png",
+    image: "projects/project3.png",
     tags: ["Java", "Servlet", "SQL","javax"],
     demoUrl: "#",
     githubUrl: "#",
