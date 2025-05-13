@@ -8,7 +8,7 @@ const projects = [
     image: "projects/project1.png",
     tags: ["React", "TailwindCSS", "Supabase"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AyushP21/ayush-portfolio",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projects = [
     image: "projects/project2.png",
     tags: ["Java", "MySQL", "Javax"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AyushP21/Visitor-Management-System",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const projects = [
     image: "projects/project3.png",
     tags: ["Java", "Servlet", "SQL","javax"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AyushP21/Visitor-Management-System",
   },
 ];
 
