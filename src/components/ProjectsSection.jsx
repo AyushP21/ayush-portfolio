@@ -1,4 +1,6 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import Project1Img from "@/assets/projects/project1.png";
+import Project2Img from "@/assets/projects/project2.png";
 import Project3Img from "@/assets/projects/project3.png";
 
 const projects = [
@@ -6,7 +8,7 @@ const projects = [
     id: 1,
     title: "My Portfolio Website",
     description: "Showcasing my work through a modern UI powered by React and Tailwind.",
-    image: "/projects/project1.png",
+    image: Project1Img,
     tags: ["React", "TailwindCSS", "Supabase"],
     demoUrl: "#",
     githubUrl: "#",
@@ -14,9 +16,8 @@ const projects = [
   {
     id: 2,
     title: "Login Page",
-    description:
-      "Modern, user-friendly login page with full authentication flow.",
-    image: "/projects/project2.png",
+    description: "Modern, user-friendly login page with full authentication flow.",
+    image: Project2Img,
     tags: ["Java", "MySQL", "Javax"],
     demoUrl: "#",
     githubUrl: "#",
@@ -24,8 +25,7 @@ const projects = [
   {
     id: 3,
     title: "Visitor System Dashboard",
-    description:
-      "Streamlined system to register, track, and manage visitors seamlessly.",
+    description: "Streamlined system to register, track, and manage visitors seamlessly.",
     image: Project3Img,
     tags: ["Java", "Servlet", "SQL", "tomcat"],
     demoUrl: "#",
@@ -38,13 +38,11 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
-          Featured <span className="text-primary"> Projects </span>
+          Featured <span className="text-primary">Projects</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,17 +61,19 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                  {project.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  {project.description}
-                </p>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
